@@ -1,0 +1,16 @@
+﻿빌드 시작: 2017-03-07 오후 12:33:21
+     1>2 노드의 "D:\20425 Nathan Cho\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SwapFuncOverloading.cpp
+         SwapFuncOverloading.cpp
+     1>d:\20425 nathan cho\consoleapplication1\consoleapplication1\swapfuncoverloading.cpp(25): error C2084: 'int swap(int *,int *)' 함수에 이미 본문이 있습니다.
+                 d:\20425 nathan cho\consoleapplication1\consoleapplication1\swapfuncoverloading.cpp(3) : 'swap'의 이전 정의를 참조하십시오.
+     1>d:\20425 nathan cho\consoleapplication1\consoleapplication1\swapfuncoverloading.cpp(33): error C2084: 'char swap(char *,char *)' 함수에 이미 본문이 있습니다.
+                 d:\20425 nathan cho\consoleapplication1\consoleapplication1\swapfuncoverloading.cpp(5) : 'swap'의 이전 정의를 참조하십시오.
+     1>d:\20425 nathan cho\consoleapplication1\consoleapplication1\swapfuncoverloading.cpp(41): error C2084: 'double swap(double *,double *)' 함수에 이미 본문이 있습니다.
+                 d:\20425 nathan cho\consoleapplication1\consoleapplication1\swapfuncoverloading.cpp(7) : 'swap'의 이전 정의를 참조하십시오.
+     1>"D:\20425 Nathan Cho\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.25
