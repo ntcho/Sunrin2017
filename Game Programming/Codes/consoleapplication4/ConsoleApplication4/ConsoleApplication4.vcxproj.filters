@@ -30,5 +30,14 @@
     <ClCompile Include="Test01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DefineVariable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test02.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticDataPreference.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
