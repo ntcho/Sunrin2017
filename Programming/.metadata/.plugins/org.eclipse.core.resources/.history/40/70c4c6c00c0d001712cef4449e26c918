@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+public class PaneAPI {
+
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "KEK Hello world");
+		// makes a simple dialog with a [Confirm] button
+		String name = JOptionPane.showInputDialog("Input string value");
+		// gets an input from a dialog
+		JOptionPane.showMessageDialog(null, name);
+		// print the input string to another dialog
+		System.exit(0);
+	}
+
+}
