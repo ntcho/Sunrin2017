@@ -1,5 +1,5 @@
 
-public class Test {
+public class DataTypeTest {
 	public static void main(String args[]) {
 		// boolean boolA = TRUE; // error: TRUE is not a variable
 		boolean boolB = 3 < 5; // surprisingly works
