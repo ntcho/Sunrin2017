@@ -29,17 +29,18 @@ int main(void) {
 
 	cout << "[strcat] Merged string (str + strCode) = " << str << endl;
 
-	if (strcmp(strCpyFromInput, strCode) > 0) {
+	if (strcmp(strCpyFromInput, strCode) < 0) {
 		cout << "[strcmp] String \"" << strCpyFromInput << "\" is in front of string \"" << strCode << "\" on alphabetical order" << endl;
 	}
-	else if (strcmp(strCpyFromInput, strCode) < 0) {
+	else if (strcmp(strCpyFromInput, strCode) > 0) {
 		cout << "[strcmp] String \"" << strCode << "\" is in front of string \"" << strCpyFromInput << "\" on alphabetical order" << endl;
 	}
 	else {
 		cout << "[strcmp] String \"" << strCode << "\" is same of string \"" << strCpyFromInput << "\" on alphabetical order" << endl;
 	}
 	// function "strcmp(char str1[], char str2[])" : checks alphabetical order of two strings
-	// if str1[] is in front of str2[], returns value > 0, vice versa and if the string is same, it returns 0
+	// if str1[] is in front of str2[], returns *value < 0*, vice versa and if the string is same, it returns 0
+	// beware it returns < 0 if the first string is at the front of the second string
 
 	return 0;
 }
