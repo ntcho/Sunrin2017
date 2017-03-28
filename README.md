@@ -4,7 +4,7 @@ Sunrin archive of Nathan Cho
 ## About the repository
 #### Archive of Sunrin Internet Highschool's software education.
 
-All of contents are free to use (Some contents could have copyright on it).
+All of contents are free to use (Some contents may have copyright on it).
 Will be updated quite frequently containing my school life.
 
 ## License
