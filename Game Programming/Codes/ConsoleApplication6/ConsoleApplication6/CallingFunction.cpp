@@ -10,8 +10,8 @@ int main() {
 
 	cout << s1 << endl;
 
-	int index = s1.find("test");
-	cout << "Index of found text of \"test\" " << index << endl;
+	int index = s1.find("This");
+	cout << "Index of found text of \"This\" " << index << endl;
 
 	s1.append(" [Appended text]");
 	cout << s1 << endl;
