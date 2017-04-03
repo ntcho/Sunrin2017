@@ -1,5 +1,5 @@
 
-public class ArrayTest {
+public class ArrayTest1 {
 	
 	public static boolean isEvenNumber(int num) {
 		if (num % 2 == 0) {
