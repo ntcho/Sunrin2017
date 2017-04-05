@@ -1,5 +1,5 @@
 
-public class Operands {
+public class OperandsExamples {
 	public static void main(String args[]) {
 		int num1 = 5; // 00000000 00000000 00000000 00000101
 		int num2 = 3; // 00000000 00000000 00000000 00000011
