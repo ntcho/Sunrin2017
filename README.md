@@ -7,6 +7,8 @@ Sunrin archive of Nathan Cho
 All of contents are free to use (Some contents may have copyright on it).
 Will be updated quite frequently containing my school life.
 
+If you have any questions or copyrighted content in this repo, please contact me by [dev.bedrock@gmail.com](mailto:dev.bedrock@gmail.com).
+
 ## License
 MIT License
 
