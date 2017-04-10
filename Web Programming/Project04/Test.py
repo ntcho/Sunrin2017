@@ -137,19 +137,140 @@ def problem12():
     print ("Problem 12 [Multiply table]")
     for i in range(1, 10):
         for j in range(1, 10):
-            print i*j,
+            print i * j,
         print
     print
 
-problem1()
-problem2()
-problem3()
-problem4()
-problem5()
-problem6()
-problem7()
-problem8()
-problem9()
-problem10()
-problem11()
-problem12()
+
+def problem13():
+    print ("Problem 13 [User input add]")
+    input_number = int(input("Enter number : "))
+    input_continue = raw_input("Continue? (Yes / No) : ")
+    output_sum = 0
+    output_sum += input_number
+    while input_continue != "no":
+        input_number = int(input("Enter number : "))
+        output_sum += input_number
+        input_continue = raw_input("Continue? (Yes / No) : ")
+    print ("Sum of numbers you entered is " + str(output_sum))
+
+
+def problem14():
+    print ("Problem 14 [Number guessing]")
+    print ("Guess a number between 1 and 100")
+    random_number = random.randrange(1, 100)
+    output_guess_count = 0
+    input_guess_number = int(input("Enter a number : "))
+    while input_guess_number != random_number:
+        output_guess_count += 1
+        if input_guess_number > 0 & input_guess_number <= 100:
+            if input_guess_number > random_number:
+                print ("Go smaller!")
+            elif input_guess_number < random_number:
+                print ("Go bigger!")
+        else :
+            print ("Enter a number between 0 and 100")
+        input_guess_number = int(input("Enter a number : "))
+    print ("Congratulations! Your guess count was " + str(output_guess_count) + " times")
+
+
+def problem15():
+    print ("Problem 15 [Problem generating]")
+    input_answer = 0
+    random_number1 = 0
+    random_number2 = 0
+    random_answer = random_number1 + random_number2
+    while input_answer == random_answer:
+        random_number1 = random.randrange(1, 100)
+        random_number2 = random.randrange(1, 100)
+        random_answer = random_number1 + random_number2
+        input_answer = int(input(str(random_number1) + " + " + str(random_number2) + " = "))
+        if input_answer == random_answer:
+            print ("Good job!")
+        else:
+            print ("Try again next time!")
+
+
+def problem16():
+    print ("Problem 16 [Advanced problem generating]")
+    input_answer = 0
+    input_again = "no"
+    random_number1 = 1
+    random_number2 = 1
+    random_answer = 0
+    output_problem_count = 0
+    random_expression = random.randrange(1, 6)
+    # 1 + 2 - 3 * 4 / 5 ** 6 %
+    while input_answer == random_answer or output_problem_count == 0:
+        random_number1 = random.randrange(1, 100)
+        random_number2 = random.randrange(1, 100)
+
+        # random expression
+        random_expression = random.randrange(1, 6)
+
+        # calculate the answer
+        if random_expression == 1:
+            random_answer = random_number1 + random_number2
+        elif random_expression == 2:
+            random_answer = random_number1 - random_number2
+        elif random_expression == 3:
+            random_number1 = random.randrange(1, 15)
+            random_number2 = random.randrange(1, 15)
+            random_answer = random_number1 * random_number2
+        elif random_expression == 4:
+            random_number2 = random.randrange(1, 12)
+            random_number1 = random_number2 * random.randrange(1, 12)
+            random_answer = random_number1 / random_number2
+        elif random_expression == 5:
+            random_number1 = random.randrange(1, 16)
+            random_answer = random_number1 ** 2
+        elif random_expression == 6:
+            random_number2 = random.randrange(1, 5)
+            random_answer = random_number1 % random_number2
+        else:
+            random_answer = random_number1 + random_number2
+
+        # printing the expression
+        if random_expression == 1:
+            input_answer = int(input(str(random_number1) + " + " + str(random_number2) + " = "))
+        elif random_expression == 2:
+            input_answer = int(input(str(random_number1) + " - " + str(random_number2) + " = "))
+        elif random_expression == 3:
+            input_answer = int(input(str(random_number1) + " * " + str(random_number2) + " = "))
+        elif random_expression == 4:
+            input_answer = int(input(str(random_number1) + " / " + str(random_number2) + " = "))
+        elif random_expression == 5:
+            input_answer = int(input(str(random_number1) + " ^ 2 = "))
+        elif random_expression == 6:
+            input_answer = int(input(str(random_number1) + " % " + str(random_number2) + " = "))
+        else:
+            input_answer = int(input(str(random_number1) + " + " + str(random_number2) + " = "))
+
+        output_problem_count += 1
+        if input_answer == random_answer:
+            print ("Good job!")
+        else:
+            print ("Try again next time! Your score was " + str(output_problem_count - 1))
+            input_again = raw_input("Try again? (Yes / No) : ")
+            if input_again == "no" or input_again == "No":
+                input_answer = -100
+            else:
+                input_answer = random_answer
+
+
+# problem1()
+# problem2()
+# problem3()
+# problem4()
+# problem5()
+# problem6()
+# problem7()
+# problem8()
+# problem9()
+# problem10()
+# problem11()
+# problem12()
+# problem13()
+# problem14()
+# problem15()
+problem16()
