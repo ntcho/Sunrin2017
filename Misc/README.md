@@ -9,6 +9,8 @@ Run as administrator to kill the task.
 ### Game Blocking Processes
 
 `C:\Windows\SysWOW64\qnaxknbgc.exe`
+`C:\Windows\SysWOW64\pelegiikc.exe`
+`C:\Windows\SysWOW64\todvvukkd.exe`
 
 Delete the exe by enabling `Show hidden files and folders` on settings
 
