@@ -21,5 +21,14 @@
     <ClCompile Include="InheritanceTest2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="InheritanceTest3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InheritanceTest4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InheritanceTest5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
