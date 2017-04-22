@@ -13,7 +13,7 @@ by Wangryeol Lee
  3. [Think Python: How to Think Like a Computer Scientist (Korean Version)](http://www.pythonlearn.com/translations/KO/book_009_ko.pdf)
 
 
-### 1st exam
+## 1st exam
 
 ***Think Python***
 
