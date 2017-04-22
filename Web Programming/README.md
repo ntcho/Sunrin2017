@@ -2,7 +2,7 @@
 
 Will learn python and django with teacher
 
-## Books to learn python
+## Books about learning python
 
 by Wangryeol Lee
 
