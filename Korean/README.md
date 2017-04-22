@@ -13,5 +13,5 @@ Will learn korean literature
 
  - First line of the paragraph > indent 1 space
    - Except that, always fill the first blank
- - Place the period and comma on the new blank
+ - Place the period and comma on the new blank (left bottom of the new blank)
    - If the line is filled, place the period or the comma on the right of the last word
