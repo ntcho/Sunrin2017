@@ -6,4 +6,5 @@ Will learn korean literature
 
 155p - 183p
 
- - except 176p 177p
+ - Except 176p 177p
+ - 원고지 쓰기 as problem
