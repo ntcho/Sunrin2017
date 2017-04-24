@@ -4,6 +4,10 @@ public class Car {
 	String color;
 	String brand;
 	
+	public Car() {
+		
+	}
+	
 	public Car(String color) {
 		this.color = color;
 	}
