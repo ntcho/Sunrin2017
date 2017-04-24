@@ -2,6 +2,13 @@
 public class Truck extends Car{
 	
 	private int weight;
+	
+	//public Truck() {}
+	// error cuz there is no super class initializer
+	public Truck() {
+		super();
+		// need this super class initializer
+	}
 
 	public Truck(int speed, String color, String brand) {
 		super(speed, color, brand);
