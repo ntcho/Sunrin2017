@@ -7,7 +7,7 @@ while True:
         print "Filename not found in directory. Please check the filename and try again."
 output_array = []
 for line in fhand:
-    word= line.rstrip().split()
+    word = line.rstrip().split()
     for element in word:
         if element in output_array:
             continue
