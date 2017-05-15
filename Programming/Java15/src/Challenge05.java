@@ -15,7 +15,7 @@ class Stack {
 			System.out.println("Error: stack size is under 0, set to 100");
 			stack = new int[100];
 		}
-	}
+	}		
 
 	public void push(int value) {
 		if (stackPointer < stack.length) {
@@ -37,7 +37,7 @@ class Stack {
 
 	public void print() {
 		System.out.print("Stack value : ");
-		for (int i = 0; i < stackPointer; i++) {
+		for (int i = stackPointer - 1; i >= 0; i--) {
 			System.out.print(stack[i] + " ");
 		}
 		System.out.println();
