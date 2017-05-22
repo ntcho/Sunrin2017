@@ -1,17 +1,11 @@
-# page 113
+# page 123
 # written for python 2.7
 
 import string
 
-fname = raw_input('Enter the file name: ')
-try:
-    fhand = open(fname)
-except:
-    print 'File cannot be opened:', fname
-    exit()
+fhand = open('words.txt')
 counts = dict()
 for line in fhand:
-    # this changes all character in the given string to the following argument
     line = line.translate(None, string.punctuation)
     line = line.lower()
     words = line.split()
@@ -20,6 +14,10 @@ for line in fhand:
             counts[word] = 1
         else:
             counts[word] += 1
-
-for item in counts:
-    print counts[item], item
+# Sort the dictionary by value
+lst = list()
+for key, val in counts.items():
+    lst.append((val, key))
+lst.sort(reverse=True)
+for key, val in lst[:10]:
+    print key, val
