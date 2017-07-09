@@ -8,6 +8,9 @@ probably will use c++ for games.
 
 C++ basics - Inheritance (except `Usage of class`)
 
+## 2nd exam
+
+Inheritance - Template functions
 
 ### Projects
 
