@@ -15,3 +15,7 @@ Will learn korean literature
    - Except that, always fill the first blank
  - Place the period and comma on the new blank (left bottom of the new blank)
    - If the line is filled, place the period or the comma on the right of the last word
+
+## 2nd exam
+
+Damn a lot of things that i can't even write it
