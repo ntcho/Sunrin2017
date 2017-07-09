@@ -18,3 +18,9 @@ by Wangryeol Lee
 ***Think Python***
 
 Chapter 2 (Variable, Expression) - Chapter 6 (String)
+
+## 2nd exam
+
+***Think Python***
+
+Chapter 7 (File) - Chapter 10 (Tuple)
