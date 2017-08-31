@@ -53,6 +53,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CubeMove.cs" />
      <Compile Include="Assets\Scripts\CubeRotation.cs" />
+     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+     <Compile Include="Assets\TornadoBanditsStudio\Low Poly Free Pack\Scripts\TBS_CameraMovement.cs" />
+     <Compile Include="Assets\TornadoBanditsStudio\Low Poly Free Pack\Water\TBS_Water.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
