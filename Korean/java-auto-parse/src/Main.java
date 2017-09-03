@@ -90,15 +90,24 @@ public class Main {
 
     public static void main(String[] args) {
         String baseUrl = "http://krdic.naver.com/search.nhn?query=";
-        String finalString = "";
         String words[] = readFile("words.txt");
+        String newline = System.getProperty("line.separator");
+        StringBuilder finalStringBuilder = new StringBuilder();
         for (String word : words) {
             String meaning = getMeaningFromRequest(getHTML(baseUrl + word + "&kind=all"));
             println("Word read from file '" + word + "'");
+            if (meaning.startsWith("PE HTML PUBLIC")) {
+                // no value, exploded
+                meaning = "NULL";
+            }
+            if (meaning.startsWith("\t") || meaning.startsWith(" ")) {
+                // for list meanings with 2 spaces on start
+                meaning = meaning.substring(1);
+            }
             println("Returned            '" + meaning + "'");
-            finalString += word + " : " + meaning + "\n";
+            finalStringBuilder.append(word).append(" : ").append(meaning).append(newline);
         }
-        writeFile("words_meaning.txt", finalString);
+        writeFile("words_meaning.txt", finalStringBuilder.toString());
     }
 
     private static void println(Object object) {
