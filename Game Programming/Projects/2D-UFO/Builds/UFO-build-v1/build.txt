@@ -1,0 +1,5 @@
+Build a game by File > Build
+
+Here should be a folder with assets and game exe.
+
+Didn't add .exe cuz I love github.
