@@ -1,33 +1,79 @@
-# Sunrin2017
-Sunrin archive of Nathan Cho
+# Django
 
-## About the repository
-#### Archive of Sunrin Internet Highschool's software education.
+Django is a python based backend server with adminstrative UI support.
 
-All of contents are free to use (Some contents may have copyright on it).
-Will be updated quite frequently containing my school life.
+## Installing Django
 
-If you have any questions or copyrighted content in this repo, please contact me by [dev.bedrock@gmail.com](mailto:dev.bedrock@gmail.com).
+1. Set Windows Environmental PATH - Install Python with Windows installer, check `Add to PATH variable` on start.
+2. Install python virtual system named *test* - `python -m venv test`
+3. Start the virtual system named *test (which is the Django project name)* - `test\Scripts\activate`
+4. Install Django - `pip install django`
+5. Create django project named *firstproject* - `django-admin startproject firstproject .`
+6. Create app named *firstapp* - `manage.py startapp firstapp`
+7. Update the database to the app - `manage.py migrate`
+8. Run the server - `manage.py runserver`
+9. Modify *firstproject*'s settings - `firstproject\settings.py`
+  - Set static file path
+    - `STATIC_URL = '/static/'`
+    - `STATIC_ROOT = os.path.join(BASE_DIR, 'static')`
+10. Create `models.py` *(contains the database object models)*
+11. Make app database file - `manage.py makemigrations firstapp`
+12. Refresh to the database - `manage.py migrate firstapp`
+13. Check working website - `https://localhost:8000/` on the browser
 
-## License
-MIT License
+## Create / manage posts
 
-Copyright (c) 2017 Nathan Cho
+### Create posts
+1. Make sure the server is running via `manage.py runserver`
+2. Go to `https://localhost:8000/admin` on the browser
+3. Log in with created credenticals
+4. Click on the database object *(which is in `models.py`)*
+5. Enter details and create
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### Manage posts
+1. Make sure the server is running via `manage.py runserver`
+2. Go to `https://localhost:8000/admin` on the browser
+3. Log in with created credenticals
+4. Click on the database object *(which is in `models.py`)*
+5. Manage created objects
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### Create posts (by shell)
+1. Access the Django shell - `manage.py shell`
+2. Import the `Post` objects in `models.py` - `from firstapp.models import Post`
+3. Create new post with credentical *me (this should be defined as a variables as a object `User`)*, title as *testTitle*, text as *testText* - `Post.objects.create(author=me, title='testTitle', text='testText')`
+4. List posts to check - `Post.objects.all()`
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Manage posts (by shell)
+// todo
+사용자 확인
+from django.contrib.auth.models import User
+User.objects.all()
+
+### Search posts (by shell filters)
+// todo
+16_3 객체 조회하기(조건)
+특정사용자:Post.objects.filter(author=me)
+글자검색:Post.objects.filter(title__contains='te')
+
+시간검색
+16_3_1 from django.utils import timezone
+16_3_2 Post.objects.filter(created_date=timezone.now())
+16_3_2(1) Post.objects.filter(published_date=timezone.now())
+16_3_3 post=Post.objects.get(title='test2')
+16_3_4 post.publish()
+16_3_5 post=Post.objects.filter(published_date__lte=timezone.now())
+
+## Create / manage superusers
+
+### Create superusers
+1. Create Django superuser - `manage.py createsuperuser`
+2. Check admin page - `https://localhost:8000/admin` on the browser
+3. Log in with created credenticals
+
+### Manage superusers
+1. Access the django shell - `manage.py shell`
+2. Import User object from Django - `from django.contrib.auth.models import User`
+3. List superusers in Django - `User.objects.filter(is_superuser=True)`
+4. Get user from username - `usr = User.objects.get(username='your username')`
+5. Set password from the defined user - `usr.set_password('raw password')`
+6. Save changes - `usr.save()`
