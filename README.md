@@ -1,5 +1,5 @@
 # Sunrin2017
-Sunrin archive of Nathan Cho
+Sunrin archive of 2017, the second grade in Sunrin, by Nathan Cho
 
 ## About the repository
 #### Archive of Sunrin Internet Highschool's software education.
