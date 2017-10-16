@@ -6,7 +6,7 @@ Django is a python based backend server with adminstrative UI support.
 
 1. Configuration *- virtual system, create project / app / DB*
 2. Create `Post` in admin page *- create class `models.py`, add models to `admin.py`, create / migrate DB*
-3. Output page in the `views.py`
+3. Output page in the `views.py` *- send to templates HTML page, show database*
 
 ## Installing Django
 
