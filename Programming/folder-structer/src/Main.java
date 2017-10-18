@@ -170,7 +170,7 @@ public class Main {
     
     private static File searchInFileList(File list[], String name) {
         String folderName = name.replaceAll("\\u0020", "%20").replaceAll("/", "\\");
-        if (folderName.equalsIgnoreCase("")) {
+        if (folderName.equalsIgnoreCase("..")) {
             // move parent
             return list[0].getParentFile().getParentFile();
         } else if (folderName.endsWith("*")) {
