@@ -1,0 +1,10 @@
+import javax.swing.JOptionPane;
+
+public class PaneAPI {
+
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "KEK Hello world");
+		System.exit(0);
+	}
+
+}
