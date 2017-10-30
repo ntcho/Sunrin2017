@@ -3,17 +3,30 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
-public class CustomListener implements ActionListener {
+public class CustomListener implements MouseListener {
+	@Override
+	public void mouseClicked(MouseEvent e) {
+
+	}
 
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		JButton button = (JButton) arg0.getSource();
-		if (button.getText().contains("zum")) {
-			button.setText("Set daum as your homepage");
+	public void mouseEntered(MouseEvent e) {
+		JButton button = (JButton) e.getSource();
+		if (button.getText().equals("Jeff")) {
+			// unverified code
+			button.setText("Jeeff");
 		} else {
-			button.setText("Set zum as your homepage");
+			button.setText("Jeff");
 		}
-		System.out.println(button.getText());
 	}
-	
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+
+	}
 }
