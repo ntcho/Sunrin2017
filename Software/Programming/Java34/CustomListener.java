@@ -1,5 +1,5 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 
@@ -28,5 +28,10 @@ public class CustomListener implements MouseListener {
 	@Override
 	public void mousePressed(MouseEvent e) {
 
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		
 	}
 }
