@@ -1,4 +1,4 @@
-- 09_3 Virtual methods
+## 09_3 Virtual methods
 
 ```java
 class Parent {}
@@ -12,11 +12,9 @@ ArrayList<Parent> array = new ArrayList<Parent>();
 array.add(new Child());
 ```
 
-is available for use
+is available for use ~~but how is this even virtual method~~
 
-~~but how is this even virtual method~~
-
-- 10_3 Wrapper classes
+## 10_3 Wrapper classes
 
 ```java
 boolean Boolean
@@ -33,7 +31,7 @@ double Double
 
 only these two of them have different names from the primitive types
 
-  - Boxing
+#### Boxing
 
 `Integer a = new Integer(10); // initialize from a value`
 
@@ -41,10 +39,10 @@ only these two of them have different names from the primitive types
 
 as seen, primitive value to a class object is boxing, and vice versa is *obviously* unboxing
 
-  - Unboxing
+#### Unboxing
 
 `int i = a.intValue();`
 
 notice the method name should be different over different types
 
-+ it's automatic after Java 1.5 (called auto boxing and auto unboxing)
+*it's automatic after Java 1.5 (called auto boxing and auto unboxing)*
